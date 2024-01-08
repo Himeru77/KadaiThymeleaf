@@ -7,11 +7,11 @@
 <body>
     <h1 th:text="#{content.title}"></h1>
     <h2 th:text="#{content.message1}"></h2>
-    <p>値を入力してください。</p>
+    <p th:text="#{content.message2}"></p>
     <p th:if="${previous != ''}">前回入力された値は「<span th:text="${previous}"></span>」でした。</p>
     <form method="post" action="/output">
     <input type="text" name="previous" th:value="${previous}">
-    <button type="submit" th:text="送信"></button>
+    <button type="submit" th:text="#{content.message3}"></button>
 </form>
 </body>
 </html>
