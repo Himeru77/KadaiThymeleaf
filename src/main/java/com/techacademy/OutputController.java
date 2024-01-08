@@ -10,9 +10,7 @@ public class OutputController {
 
     @PostMapping("/output")
     public String postOutput(@RequestParam(name = "previous", required = false) String previous, Model model) {
-            if (previous != null) {
             model.addAttribute("previous", previous);
-            }
             return "output";
             }
 
