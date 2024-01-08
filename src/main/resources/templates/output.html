@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1 th:text="#{content.title}"></h1>
-    <h2>出力画面</h2>
+    <h2 th:text="#{content.message2}"></h2>
     <p>入力された値は「<span th:text="${previous}"></span>」です。</p>
     <p><a th:href="@{/input(previous=${param.previous[0]})}">入力画面へ戻る</a></p>
 </body>
